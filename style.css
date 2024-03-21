@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url("images/frank.jpeg");
+}
+.container img{
+    width: 100px;
+    margin: -100px 45% 0;
+    border-radius: 20px;
+    background: linear-gradient(110deg, #fcd, rgb(142, 253, 238));
+    background-size: auto;
+    background-position: top;
+}
+.container{
+    display: block;
+    width: 70%;
+    border-radius: 10px;
+    margin: 100px auto 40px;
+    padding: 40px 20px 30px;
+    background: linear-gradient(135deg, #fcd, #0fd);
+}
+.header{
+    align-content: center;
+    display: absolute;
+}
+.header input{
+    color: rgb(50, 48, 48);
+    display: relative;
+    width: 90%;
+    border-radius: 10px;
+    height: 30px;
+    padding: 0 10px 0;
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+}
+.header button{
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 50px;
+    display: absolute;
+    background:rgb(241, 152, 19);
+    height: 25px;
+    border: none;
+}
+ul li{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    padding: 10px;
+    list-style: none;
+    background-color: lightgray;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    background-image: url(./images/radio.png);
+    background-size: cover;
+    background-position: center;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    
+    left: 0;
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    color: white;
+    background-image: url(./images/checked.png);
+    background-size: cover;
+    background-position: center;
+}
+span{
+    float: right;
+    border-radius: 50%;
+    background: whitesmoke;
+    font-size: 15px;
+    width: 15px;
+}
+span:hover{
+    background: #ff003c;
+}
+
